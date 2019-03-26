@@ -1,0 +1,63 @@
+/*24*/
+@media only screen and (max-width: 1920px) {
+
+    .cardHolders{
+        margin-top: -82px;
+       }
+    .cal4u{
+    margin-top: 145px;
+   }
+
+  }
+
+   /*19"*/
+  @media only screen and (max-width: 1280px) {
+    .cardHolders{
+        margin-top: -110px;
+       }
+    .cal4u{
+    margin-top: 60px;
+   }
+   }
+   
+       /*22"*/
+       @media only screen and (max-width: 1680px) and (min-height: 1050px) {
+        .cardHolders{
+          margin-top: -82px;
+         }
+      .cal4u{
+      margin-top: 105px;
+     }
+       }
+
+ 
+.MyDate{
+  width: 250px;
+  height: 250px;
+  margin-right: 77px;
+  direction: ltr;
+  margin-top: -666px;
+}
+
+.btnDate{
+  margin-top: 0px;
+  margin-left: 2px;
+  border: 1px solid;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.btnDate:hover {
+  background-color: #555555; 
+}
+
+
+.Latest{
+  margin-top: -188px;
+  direction: rtl;
+  margin-left: 40%;
+  margin-bottom: 164px;
+}
+ 
+
+    

@@ -1,0 +1,42 @@
+
+
+<div class="Latest">
+  <p style="font-size: 22px;color:white" >
+    this is the Latest version - v1.0.5
+  </p>  
+</div>
+
+<div class="container" style="background-color: black;
+margin-top: -16px;
+box-shadow: 3px 0px 20px 9px #179ae0;">
+
+  <div class="row" class="cardHolders" *ngIf="showComponents">
+      <app-card-holders-tbl>
+      </app-card-holders-tbl>
+  </div>
+  
+  <div class="row" class="cal4u" *ngIf="showComponents">
+      <app-cal4u></app-cal4u>
+    </div>
+  
+  
+  </div>
+  
+  
+  <div class="row MyDate" *ngIf="showComponents">
+      <form class="form-inline">
+          <div class="form-group">
+            <div class="input-group">
+              <input class="form-control" placeholder="yyyy-mm-dd"
+                     name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+              <div class="input-group-append">
+                <i class="far fa-calendar-alt fa-2x btnDate" 
+                (click)="d.toggle()"></i>
+              </div>
+            </div>
+          </div>
+        </form>
+        
+        <hr/>
+        <pre>Model: {{ model | json }}</pre>
+    </div>

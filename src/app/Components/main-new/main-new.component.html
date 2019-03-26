@@ -1,0 +1,44 @@
+
+
+<div *ngIf="islatestVersion">
+
+<div class="Latest" *ngIf="BtnLatestVersion">
+  <i class="fas fa-external-link-square-alt fa-2x" style="cursor: pointer" (click)="SetLatestVersion()">נבחרת לקבל את הגרסה העדכנית של המערכת</i>
+</div>
+
+
+<div class="container">
+
+
+<div class="row" class="cardHolders" *ngIf="showComponents">
+    <app-card-holders-tbl>
+    </app-card-holders-tbl>
+</div>
+
+<div class="row" class="cal4u" *ngIf="showComponents">
+    <app-cal4u></app-cal4u>
+  </div>
+
+
+</div>
+
+
+<div class="row MyDate" *ngIf="showComponents">
+    <form class="form-inline">
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd"
+                   name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+            <div class="input-group-append">
+              <i class="far fa-calendar-alt fa-2x btnDate" 
+              (click)="d.toggle()"></i>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <hr/>
+      <pre>Model: {{ model | json }}</pre>
+  </div>
+
+</div>

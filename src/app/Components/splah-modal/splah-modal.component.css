@@ -1,0 +1,8 @@
+.splashImage{
+    background-image: url("src/assets/images/SplashImage.jpg");
+    height: 600px;
+    width: 890px; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    overflow: hidden;
+}

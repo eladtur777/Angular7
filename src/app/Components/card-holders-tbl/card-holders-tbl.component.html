@@ -1,0 +1,46 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-2 btnToggle">
+      <div  id="toggles123">
+        <input type="checkbox" name="checkbox11" [checked]="!switchIsOn" id="checkbox123" class="ios-toggle123" (click)="HolderSwitcherClick()" />
+        <label for="checkbox123" class="checkbox-label123" data-off="On" data-on="Off"></label>
+      </div>
+    </div>
+    <div class="col-6">
+      <h2 class="lblCard">Card-Holders</h2>
+    </div>
+  </div>
+  <div class="container">
+<div *ngIf="clientData;else noData">
+  <table [ngClass]="cardHoldertblStyle" class="tblCard">
+    <thead>
+      <tr>
+          <th scope="col">#</th>
+          <th scope="col">FirstName</th>
+          <th scope="col">LastName</th>
+          <th scope="col">Age</th>
+          <th scope="col">AccountNumber</th>
+          <th scope="col">Misgeret</th>
+          <th scope="col">Stage</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of clientData">
+            <td>{{c.id}}</td>
+            <td>{{c.FirstName}}</td>
+            <td>{{c.LastName}}</td>
+            <td>{{c.age}}</td>
+            <td>{{c.AccountNumber}}</td>
+            <td>{{c.Misgeret}}</td>
+            <td>{{c.Stage}}</td>
+          </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<ng-template #noData>
+<h2 style="color: white;font-size: 20px"> לא קיימים נתונים</h2> 
+</ng-template>
+</div>

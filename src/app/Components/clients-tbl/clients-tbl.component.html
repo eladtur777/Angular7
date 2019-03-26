@@ -1,0 +1,18 @@
+<div>
+  <h2>My Clients</h2>
+  <input type="text" id="myInput" (keyup)="myFunction()" placeholder="Search for names.." title="Type in a name">
+  <table id="myTable">
+    <tr class="header">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Power</th>
+      <th>Age</th>
+    </tr>
+    <tr *ngFor="let c of clientData">
+      <td>{{c.id}}</td>
+      <td>{{c.name}}</td>
+      <td>{{c.power}}</td>
+      <td>{{c.alterEgo}}</td>
+    </tr>
+  </table>
+  </div>
